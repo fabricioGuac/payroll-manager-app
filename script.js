@@ -26,8 +26,10 @@ const collectEmployees = function() {
   // Sets the employee salary to $0 in case is not a number
   if(isNaN(employee.salary)){
     window.alert(`${employee.salary} is not a valid number. It will default to $0`);
-  employee.salary = 0;
-  }
+  employee.salary = 0; 
+}
+// Turns the salary from string to a number
+employee.salary = parseFloat(employee.salary);
 
   // Pushes the objects with the data into the employees array
   employees.push(employee);
@@ -42,13 +44,23 @@ return employees;
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
-
+  // Calculate and display the average salary
+  // variable to store salaries in
+  let salarysum = 0;
+  
+  // Loop over the employeesArray's length to access each salary and add it to the salarysum variable
+  for (let i = 0; i < employeesArray.length; i++){
+    salarysum +=  employeesArray[i].salary;
+  };
+  // Log in the console the results
+  console.log(`Tha avarage salary between our ${employeesArray.length} employees is ${salarysum}`);
 }
+
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
-  // TODO: Select and display a random employee
+  // TODO: Select and display a random employee 
+
 }
 
 /*

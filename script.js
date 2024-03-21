@@ -53,14 +53,18 @@ const displayAverageSalary = function(employeesArray) {
     salarysum +=  employeesArray[i].salary;
   };
   // Log in the console the results
-  console.log(`Tha avarage salary between our ${employeesArray.length} employees is ${salarysum}`);
+  console.log(`The avarage salary between our ${employeesArray.length} employees is ${salarysum}`);
 }
 
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee 
+  // Rounds down a random number between 0 and 1 times the array length and stores it inside the rdmEmp variable
+  let rdmEmp = Math.floor(Math.random()*employeesArray.length);
 
+  // Uses the random number from rdmEmp as an index to log in the console a random employee
+  console.log(`Congraulations to ${employeesArray[rdmEmp].firstName} ${employeesArray[rdmEmp].lastName}, our random drawing Winner!`);
 }
 
 /*

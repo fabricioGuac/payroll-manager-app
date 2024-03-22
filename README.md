@@ -8,9 +8,9 @@ This project will modify starter an code to create an application for payroll ma
 
 N/A
 
-## Navigation
+## Usage
 
-
+To use this application press the Add Employees buttom, follow the prompted instructions and once you are done you can open the console to view the avarage salary and a randomly selected employee.
 
 ## Credits
 
@@ -18,12 +18,11 @@ N/A
 
 ## Screenshot displaying the deployed site
 
-
-
+![Employee payroll application](./img/Employee-payroll-app.png)
 
 ## URL to the deployed site
 
-
+https://fabricioguac.github.io/payroll-manager-app/
 
 ## License
 
